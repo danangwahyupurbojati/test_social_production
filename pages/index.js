@@ -11,6 +11,7 @@ export default function Home() {
     const [socialData, setSocialData] = useState(null)
 
     const responseFacebook = (response) => {
+        console.log('fb', response);
         if (response.status !== 'unknown') {
             const data = {
                 name: response.name,
@@ -24,6 +25,7 @@ export default function Home() {
     }
 
     const responseGoogle = (response) => {
+        console.log('gg', response);
         if (!response.error) {
             const data = {
                 name: response.profileObj.name,
