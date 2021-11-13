@@ -78,7 +78,8 @@ export default function Home() {
                             <div>
                             <GoogleLogin
                                 // clientId="926807081578-ggvon7gvno07duj7u39shlck5pre5eot.apps.googleusercontent.com"
-                                clientId="926807081578-tvp5tnshg19snivduu71c47aqko72crm.apps.googleusercontent.com"
+                                // clientId="926807081578-tvp5tnshg19snivduu71c47aqko72crm.apps.googleusercontent.com"
+                                clientId="707295419452-2q4t3cicr5fus4amd7cfe7ibv8knmk6b.apps.googleusercontent.com"
                                 buttonText="Login with Google"
                                 onSuccess={responseGoogle}
                                 onFailure={responseGoogle}
