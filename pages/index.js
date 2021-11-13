@@ -90,11 +90,7 @@ export default function Home() {
                         <div className={styles.card}>
                             <h2>Facebook Login &rarr;</h2>
                             <div>
-                                // <FacebookLogin
-                                    // appId="487898255568058"
-                                    // fields="name,email"
-                                    // callback={responseFacebook} 
-                                // />
+                                <h1>hehe</h1>
                             </div>
                         </div>
                         <div className={styles.card}>
