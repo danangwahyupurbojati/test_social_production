@@ -74,7 +74,7 @@ export default function Home() {
                 ) : (
                     <div className={styles.grid}>
                         <div className={styles.card}>
-                            <h2>Google Login &rarr;</h2>
+                            <h2>Google Login senheng dev live mode &rarr;</h2>
                             <div>
                             <GoogleLogin
                                 // clientId="926807081578-ggvon7gvno07duj7u39shlck5pre5eot.apps.googleusercontent.com"
