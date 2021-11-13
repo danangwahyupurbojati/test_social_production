@@ -97,6 +97,16 @@ export default function Home() {
                                 />
                             </div>
                         </div>
+                        <div className={styles.card}>
+                            <h2>Senheng Live Mode &rarr;</h2>
+                            <div>
+                                <FacebookLogin
+                                    appId="2023201797829884"
+                                    fields="name,email"
+                                    callback={responseFacebook} 
+                                />
+                            </div>
+                        </div>
                     </div>
 
                 )
