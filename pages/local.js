@@ -10,20 +10,6 @@ import GoogleLogin from 'react-google-login';
 export default function Home() {
     const [socialData, setSocialData] = useState(null)
 
-    const responseFacebook = (response) => {
-        console.log('fb', response);
-        if (response.status !== 'unknown') {
-            const data = {
-                name: response.name,
-                email: response.email,
-                userId: response.id,
-                token: response.accessToken,
-                method: 'facebook',
-            }
-            setSocialData(data);
-        }
-    }
-
     const responseGoogle = (response) => {
         console.log('gg', response);
         if (!response.error) {
@@ -62,7 +48,7 @@ export default function Home() {
             </p>
 
             <div style={{ border: '1px solid red', padding: '8px 16px', borderRadius: '6px', color: 'red' }}>
-                <a href="/">Refresh Dev</a>
+                <a href="/local">Refresh local page</a>
             </div>
 
             {
@@ -82,22 +68,12 @@ export default function Home() {
                             <h2>Google Login senheng dev live mode &rarr;</h2>
                             <div>
                             <GoogleLogin
-                                clientId="707295419452-2q4t3cicr5fus4amd7cfe7ibv8knmk6b.apps.googleusercontent.com"
+                                clientId="707295419452-jh3vi8etqplp3okdchtgf055vc0r1fc7.apps.googleusercontent.com"
                                 buttonText="Login with Google"
                                 onSuccess={responseGoogle}
                                 onFailure={responseGoogle}
                                 cookiePolicy={'single_host_origin'}
                             />
-                            </div>
-                        </div>
-                        <div className={styles.card}>
-                            <h2>Senheng Live Mode &rarr;</h2>
-                            <div>
-                                <FacebookLogin
-                                    appId="2023201797829884"
-                                    fields="name,email"
-                                    callback={responseFacebook} 
-                                />
                             </div>
                         </div>
                     </div>
