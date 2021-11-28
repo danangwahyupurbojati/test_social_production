@@ -91,10 +91,10 @@ export default function Home() {
                             </div>
                         </div>
                         <div className={styles.card}>
-                            <h2>Senheng Live Mode &rarr;</h2>
+                            <h2>facebook live test</h2>
                             <div>
                                 <FacebookLogin
-                                    appId="2023201797829884"
+                                    appId="378702040579164"
                                     fields="name,email"
                                     callback={responseFacebook} 
                                 />
