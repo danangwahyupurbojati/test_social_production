@@ -91,11 +91,12 @@ export default function Home() {
                             </div>
                         </div>
                         <div className={styles.card}>
-                            <h2>facebook live test</h2>
+                            <h2>facebook live test publict</h2>
                             <div>
                                 <FacebookLogin
                                     appId="378702040579164"
                                     fields="name,email"
+                                    scope="public_profile, email, user_birthday"
                                     callback={responseFacebook} 
                                 />
                             </div>
